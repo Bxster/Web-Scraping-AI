@@ -213,7 +213,7 @@ def analyze_website(url):
         return f"Errore: {str(e)}"
 
 # Caricamento dati
-df = pd.read_csv("/content/drive/My Drive/Colab Notebooks/ImpreseEnergetiche.csv")
+df = pd.read_csv("/content/drive/My Drive/ImpreseEnergetiche.csv")
 path_to_save = "/content/drive/My Drive/risultati_AI.csv"
 df = df.dropna(subset=["URL"]).drop_duplicates(subset=["URL"])
 
